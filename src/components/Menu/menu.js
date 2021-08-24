@@ -6,6 +6,12 @@ import thi from '../Menu/3.jpg'
 import fou from '../Menu/4.jpg'
 import fiv from '../Menu/5.jpg'
 import six from '../Menu/6.jpg'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
 const Menu = () => 
 {
@@ -39,7 +45,7 @@ const Menu = () =>
         <div className="cardsArea">
             <div className="card">
                 <div className="card_image">
-                <img src={first} alt="ImageOfShoe" height="240rem" width="320rem"/>
+                <img src="https://source.unsplash.com/weekly?shoe" alt="ImageOfShoe" height="240rem" width="320rem"/>
                 </div>
                 <div className="card_content">
                 <div className="card_details">
@@ -61,10 +67,11 @@ const Menu = () =>
                 <div className="card_details">
                 <h3 className="textcard">Hamburger</h3>
                 <h2 className="textcard">Price 200</h2>
+                <h2 className="textcard">{addProduct}</h2>
                 </div>
                 <div className="buttonArea">
-                <button type="button" className="butPLusMinus" >+</button>
-                <button type="button" className="butPLusMinus" >-</button>
+                <button type="button" className="butPLusMinus" onClick={increase} >+</button>
+                <button type="button" className="butPLusMinus" onClick={decrease} >-</button>
             </div>
                 </div>
             </div>
@@ -76,10 +83,11 @@ const Menu = () =>
                 <div className="card_details">
                 <h3 className="textcard">Hamburger</h3>
                 <h2 className="textcard">Price 200</h2>
+                <h2 className="textcard">{addProduct}</h2>
                 </div>
                 <div className="buttonArea">
-                <button type="button" className="butPLusMinus" >+</button>
-                <button type="button" className="butPLusMinus" >-</button>
+                <button type="button" className="butPLusMinus" onClick={increase} >+</button>
+                <button type="button" className="butPLusMinus" onClick={decrease} >-</button>
             </div>
                 </div>
             </div>
@@ -91,10 +99,11 @@ const Menu = () =>
                 <div className="card_details">
                 <h3 className="textcard">Hamburger</h3>
                 <h2 className="textcard">Price 200</h2>
+                <h2 className="textcard">{addProduct}</h2>
                 </div>
                 <div className="buttonArea">
-                <button type="button" className="butPLusMinus" >+</button>
-                <button type="button" className="butPLusMinus" >-</button>
+                <button type="button" className="butPLusMinus" onClick={increase} >+</button>
+                <button type="button" className="butPLusMinus" onClick={decrease} >-</button>
             </div>
                 </div>
             </div>
@@ -106,10 +115,11 @@ const Menu = () =>
                 <div className="card_details">
                 <h3 className="textcard">Hamburger</h3>
                 <h2 className="textcard">Price 200</h2>
+                <h2 className="textcard">{addProduct}</h2>
                 </div>
                 <div className="buttonArea">
-                <button type="button" className="butPLusMinus" >+</button>
-                <button type="button" className="butPLusMinus" >-</button>
+                <button type="button" className="butPLusMinus" onClick={increase} >+</button>
+                <button type="button" className="butPLusMinus" onClick={decrease} >-</button>
             </div>
                 </div>
             </div>
@@ -121,14 +131,16 @@ const Menu = () =>
                 <div className="card_details">
                 <h3 className="textcard">Hamburger</h3>
                 <h2 className="textcard">Price 200</h2>
-                <h2 className="textcard">1</h2>
+                <h2 className="textcard">{addProduct}</h2>
                 </div>
                 <div className="buttonArea">
-                <button type="button"  className="butPLusMinus" >+</button>
-                <button type="button" className="butPLusMinus" >-</button>
+                <button type="button" className="butPLusMinus" onClick={increase} >+</button>
+                <button type="button" className="butPLusMinus" onClick={decrease} >-</button>
             </div>
                 </div>
             </div>
+            <button type="button" id="gtm"  > <Link to="/thank" className="btn btn-primary">Thank You </Link></button>
+
         </div>
      </main>
     );
