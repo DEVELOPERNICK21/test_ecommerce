@@ -2,7 +2,6 @@ import {useState} from 'react'
 import './menu.css'
 import Logo from '../Menu/logo.png'
 import {
-    BrowserRouter as 
     Link
   } from "react-router-dom";
   import CardData from "./data"

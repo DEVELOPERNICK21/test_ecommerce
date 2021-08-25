@@ -1,7 +1,6 @@
 import './style.css'
 import Logo from './Menu/logo.png'
-import {
-    BrowserRouter as 
+import { 
     Link
 } from "react-router-dom";
 
