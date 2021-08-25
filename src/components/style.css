@@ -16,9 +16,19 @@ main {
   width: 100%;
   padding: 0.5rem;
   color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+.Logo_Image {
+  height: auto;
+  width: auto;
+  margin-left: 2rem;
 }
 .headArea h3 {
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 .contentArea {
@@ -42,4 +52,9 @@ button {
   background-color: rgb(56, 98, 224);
   border: none;
   border-radius: 0.3em;
+  text-decoration: none;
+}
+.btn {
+  color: aliceblue;
+  text-decoration: none;
 }

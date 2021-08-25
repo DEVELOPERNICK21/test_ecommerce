@@ -1,3 +1,29 @@
+.cart:last-of-type {
+  margin-left: auto;
+}
+
+.menuheadArea {
+  background: rgb(65, 131, 255);
+  top: 0%;
+  height: 4rem;
+  width: 100%;
+  padding: 0.5rem;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+.menuLogo_Image {
+  height: auto;
+  width: auto;
+  margin-left: 2rem;
+}
+.menuName {
+  padding-left: 1rem;
+}
+
 .cardsArea {
   background-color: rgba(243, 243, 243, 0.952);
   height: 100%;
@@ -33,13 +59,13 @@
 }
 .card_image {
   max-width: auto;
-  height: 60%;
+  height: 50%;
 }
 
 .card_content {
   background-color: rgb(190, 224, 255);
   max-width: auto;
-  height: 50%;
+  height: 60%;
   text-align: center;
   align-self: center;
   display: flex;
@@ -61,4 +87,13 @@
   border: none;
   border-radius: 0.3em;
   margin: 1rem;
+}
+
+.cartbut button {
+  color: rgb(255, 255, 255);
+  width: 5rem;
+  height: 2.2rem;
+  background-color: rgb(56, 98, 224);
+  border: none;
+  border-radius: 0.3em;
 }
