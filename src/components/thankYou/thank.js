@@ -1,4 +1,3 @@
-import react from 'react'
 import './thank.css'
 import Logo from '../Menu/logo.png'
 
@@ -8,7 +7,7 @@ const Thank = () =>
     <main>
  <div className="headArea">
             <div className="Logo_Image">
-                <img src={Logo} alt="Logo IMage of fork and spoon" height="40rem" width="40rem" />
+                <img src={Logo}  height="40rem" width="40rem" />
             </div>
             <div className="name">
                 <h3>Food's Resturant</h3>

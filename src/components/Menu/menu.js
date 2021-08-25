@@ -1,16 +1,8 @@
-import react,{useState} from 'react'
+import {useState} from 'react'
 import './menu.css'
-import first from '../Menu/1.jpg'
-import sec from '../Menu/2.jpg'
-import thi from '../Menu/3.jpg'
-import fou from '../Menu/4.jpg'
-import fiv from '../Menu/5.jpg'
-import six from '../Menu/6.jpg'
 import Logo from '../Menu/logo.png'
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
+    BrowserRouter as 
     Link
   } from "react-router-dom";
   import CardData from "./data"
@@ -18,7 +10,7 @@ import {
 const Menu = (props) => 
 {
      const [addProduct, setAddProduct] = useState(0);
-     const [showItem, setShowItem] = useState(false);
+    //  const [showItem, setShowItem] = useState(false);
 
      const increase = () =>
      {
@@ -38,16 +30,16 @@ const Menu = (props) =>
          
      }
 
-     const qtyShoe = () =>
-     {
-         setShowItem(true);
-     }
+    //  const qtyShoe = () =>
+    //  {
+    //      setShowItem(true);
+    //  }
 
     return(
     <main>
  <div className="menuheadArea">
             <div className="menuLogo_Image">
-                <img src={Logo} alt="Logo IMage of fork and spoon" height="40rem" width="40rem" />
+                <img src={Logo}  height="40rem" width="40rem" />
             </div>
             <div className="menuName">
                 <h3>Food's Resturant</h3>
@@ -67,7 +59,8 @@ const Menu = (props) =>
                 <div className="card_details">
                 <h3 className="textcard">{val.productName}</h3>
                 <h2 className="textcard">{val.produtPrice}</h2>
-                {qtyShoe ? <h2 className="textcard">{addProduct}</h2> : null}  
+                {/* {qtyShoe ? <h2 className="textcard">{addProduct}</h2> : null}   */}
+                <h2 className="textcard">{addProduct}</h2>   
                 
                 </div>
                  <div className="buttonArea">

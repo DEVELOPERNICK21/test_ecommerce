@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import Header from './components/style'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Menu from './components/Menu/menu'
 import Thank from './components/thankYou/thank'
