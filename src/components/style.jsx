@@ -23,7 +23,7 @@ const Header = () => {
                 </div>
                 <div className="buttonArea">
 
-                    <button type="button" id="gtm"  > <Link to="/menu" className="btn btn-primary">GO TO MENU</Link></button>
+                    <button type="button" id="gtm"  > <Link to="/login" className="btn btn-primary">GO TO MENU</Link></button>
                 </div>
             </div>
         </main>
