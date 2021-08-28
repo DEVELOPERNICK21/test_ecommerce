@@ -1,4 +1,4 @@
-import Header from './components/style'
+// import Header from './components/style'
 import {
   BrowserRouter as Router,
   Switch,
